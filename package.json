@@ -1,0 +1,25 @@
+{
+  "name": "micro-zoe-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/adntin/micro-zoe-demo.git",
+  "author": "linbin <linbin@leedarson.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
+  "scripts": {
+    "all:install": "npm-run-all --serial build install:*",
+    "all:dev": "npm-run-all --parallel dev:*",
+    "install:main": "cd projects/main && yarn",
+    "install:app1": "cd projects/app1 && yarn",
+    "install:app2": "cd projects/app2 && yarn",
+    "dev:main": "cd projects/main && yarn dev",
+    "dev:app1": "cd projects/app1 && yarn dev",
+    "dev:app2": "cd projects/app2 && yarn dev"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
