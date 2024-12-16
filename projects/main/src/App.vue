@@ -1,23 +1,12 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <h1>我是主应用</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <!-- name：应用名称, url：应用地址 -->
+  <micro-app name="middle" url="http://localhost:3001/" iframe></micro-app>
+  <micro-app name="app21" url="http://localhost:3021/" iframe></micro-app>
+  <micro-app name="app22" url="http://localhost:3022/" iframe></micro-app>
 </template>
 
 <style scoped>
