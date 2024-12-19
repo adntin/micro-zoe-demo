@@ -1,15 +1,3 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main>我是App22关于我们</main>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>

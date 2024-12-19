@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// import microApp from '@micro-zoe/micro-app'
+// microApp.router.push({name: 'my-app', path: '/page1'})
+</script>
 
 <template>
   <h1>我是主应用</h1>
+  <nav></nav>
 
   <!-- name：应用名称, url：应用地址 -->
   <micro-app name="middle" url="http://localhost:3001/" iframe></micro-app>
